@@ -39,17 +39,26 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom "
+    "test": "node scripts/test.js --env=jsdom ",
+    "test:mocha": "mocha -w -r ts-node/register --watch-extensions ts,tsx src/**/*.spec.tsx"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.1.5",
+    "@types/chai": "^4.0.10",
+    "@types/enzyme": "^3.1.6",
+    "@types/enzyme-adapter-react-16": "^1.0.1",
     "@types/jest": "^21.1.8",
+    "@types/jsdom": "^11.0.4",
     "@types/md5": "^2.1.32",
     "@types/node": "^8.5.1",
     "@types/react": "^16.0.30",
     "@types/react-dom": "^16.0.3",
+    "chai": "^4.1.2",
     "enzyme": "^3.2.0",
-    "react-addons-test-utils": "^15.6.2"
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jsdom": "^11.5.1",
+    "mocha": "^4.0.1",
+    "react-addons-test-utils": "^15.6.2",
+    "ts-node": "^4.0.2"
   },
   "jest": {
     "mapCoverage": true,
